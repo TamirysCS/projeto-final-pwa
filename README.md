@@ -1,3 +1,3 @@
-# PWA - Vanilla JS
+# PWA - DM122 - Inatel
 
-An example of PWA with Vanilla JS
+Projeto final da disciplina DM122 - Professor Edy Segura.
