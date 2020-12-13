@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>DM122 - PWA</title>
+  <title>Agenda Médica PWA</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet"
@@ -20,19 +20,20 @@
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
         <!-- Title -->
-        <span class="mdl-layout-title">DM122 - PWA</span>
+        <span class="mdl-layout-title">Agenda Médica PWA</span>
       </div>
     </header>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">PWA - Vanilla JS</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="/">About</a>
-      </nav>
-    </div>
-    <main class="mdl-layout__content mat-typography" style="text-align: center">
-      <p id="output">
-        <img src="assets/images/pwa-logo.png" alt="PWA Logo">
-      </p>
+     
+    <main class="mdl-layout__content mat-typography"  >
+      <form>
+        <h5>Dados da consulta</h5>
+        <label for="nome">Paciente: </label>
+        <input type="text" id="paciente" name="paciente" placeholder="Nome..." autofocus="" required="" autocomplete="off">
+        <label for="data_hora">Horário: </label>
+        <input type="datetime-local" id="horario" name="horario" required="" autocomplete="off">
+        <button>Save</button>
+      </form>
+        
     </main>
   </div>
 </div>
