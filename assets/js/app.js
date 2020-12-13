@@ -1,8 +1,11 @@
 
 
+import HtmlService from './HtmlService.js';
+
 class App {
     constructor() {
       this.registerServiceWorker();
+      new HtmlService();
     }
       
     registerServiceWorker(){ 

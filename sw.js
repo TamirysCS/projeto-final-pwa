@@ -7,6 +7,7 @@ const assetsToCache = [
     'https://fonts.googleapis.com/icon?family=Material+Icons',  
     'assets/images/pwa-logo.png',  
     'assets/js/material.min.js',  
+    'assets/js/HtmlService.js',
     'assets/css/style.css',  
     'assets/js/app.js',  
     'favicon.ico',
