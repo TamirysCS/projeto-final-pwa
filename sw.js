@@ -37,7 +37,6 @@ function removeOldCache(cacheKey) {
 }
 
 async function cacheCleanup() {
-    debugger
     const keyList = await caches.keys();
     return Promise.all(keyList.map(removeOldCache));
 }
@@ -56,6 +55,16 @@ async function networkFirst(request) {
         return cache.match(request);
     }
 }
+
+async function cacheFirst(request) {
+    try {
+      const cache = await caches.open(cacheName);
+      const response = await cache.match(request);
+      return response || fetch(request);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
 self.addEventListener('fetch', event => {
     /* console.log('[Service Worker] Fetch event...', event); */
