@@ -1,6 +1,6 @@
 export default class HtmlService {
 
-constructor(){
+constructor(appointmentService){
     this.bindButtonListener();
 }
 
@@ -8,8 +8,9 @@ bindButtonListener() {
 
     const button = document.querySelector("button");
     button.addEventListener("click", () => {
-      console.log("Button clicked!");
-      
+ 
+        console.log("Button clicked!");
+ 
     });
 }
 

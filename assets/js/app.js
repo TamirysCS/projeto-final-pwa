@@ -1,11 +1,12 @@
 
 
 import HtmlService from './HtmlService.js';
+import AppointmentService from './AppointmentService.js';
 
 class App {
     constructor() {
       this.registerServiceWorker();
-      new HtmlService();
+      new HtmlService(new AppointmentService());
     }
       
     registerServiceWorker(){ 
