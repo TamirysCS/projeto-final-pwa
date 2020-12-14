@@ -1,4 +1,4 @@
-const cacheName = 'app-shell-v6';
+const cacheName = 'app-shell-v7';
 const assetsToCache = [
     'https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css',  
     'https://fonts.gstatic.com/s/materialicons/v55/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2',  
@@ -72,5 +72,5 @@ async function cacheFirst(request) {
 
 self.addEventListener('fetch', event => {
     /* console.log('[Service Worker] Fetch event...', event); */
-    event.respondWith(networkFirst(event.request));
+    event.respondWith(cacheFirst(event.request));
 });
