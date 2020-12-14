@@ -1,4 +1,4 @@
-const cacheName = 'app-shell-v4';
+const cacheName = 'app-shell-v5';
 const assetsToCache = [
     'https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css',  
     'https://fonts.gstatic.com/s/materialicons/v55/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2',  
@@ -13,6 +13,7 @@ const assetsToCache = [
     'assets/js/app.js',  
     'favicon.ico',
     'index.html',
+    'manifest.json',
     '/'
 ];
 
