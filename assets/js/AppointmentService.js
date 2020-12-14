@@ -29,6 +29,14 @@ save(appointment){
     return db.appointments.put(appointment);
 }
 
+getAll(){
+    return db.appointments.toArray();
+}
+
+delete(id){
+    return db.appointments.delete(id);
+}
+
 
 
 
