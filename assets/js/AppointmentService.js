@@ -17,12 +17,16 @@ initializeDB(){
 
     db.on("populate", async () => {
         await db.appointments.bulkPut([
-          { paciente: "Maria", horario: new Date(Date.now()).toString()},
-          { paciente: "João", horario: new Date(Date.now()).toString()}
+          { paciente: "Maria", horario: "15:00"},
+          { paciente: "João", horario: "14:00"}
         ]);
       });
   
     db.open();
+}
+
+save(appointment){
+    return db.appointments.put(appointment);
 }
 
 
